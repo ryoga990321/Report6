@@ -8,7 +8,7 @@ public class PokeGatya {
     String[] n = {"ヒトカゲ", "フシギダネ", "ゼニガメ", "ワンリキー", "ケーシィ", "イシツブテ", "ニドラン♀", "ニドラン♂", "ニョロモ", "ゴース", "ミニリュウ", "ポッポ", "キャタピー", "ビードル", "ナゾノクサ", "マダツボミ", "ハネッコ", "ププリン", "メリープ", "チコリータ", "ヒノアラシ", "アチャモ", "ケムッソ", "ピチュー", "タネボー", "ナマケロ", "キモリ", "ハスボー", "ルリリ", "ワニノコ", "ミズゴロウ", "タマザラシ", "タッツー", "ズバット", "ゴニョニョ", "ピィ", "ココドラ", "ヨーギラス", "ラルトス", "ナックラー", "タツベイ", "ダンバル"};
 
     public void pokeGatya() {
-        val = (int) (Math.random() * 100) + 1;
+        sulot();
         if (val >= 1 && val <= 5) {
             number = (int) (Math.random() * 21);
             System.out.println("ssr:" + ssr[number]);
@@ -29,7 +29,7 @@ public class PokeGatya {
     }
 
     public void lastGatya() {
-        val = (int) (Math.random() * 100) + 1;
+        sulot();
         if (val >= 1 && val <= 25) {
             number = (int) (Math.random() * 21);
             System.out.println("ssr:" + ssr[number]);
@@ -42,7 +42,7 @@ public class PokeGatya {
     }
 
     public void superGatya() {
-        val = (int) (Math.random() * 100) + 1;
+        sulot();
         if (val >= 1 && val <= 10) {
             number = (int) (Math.random() * 21);
             System.out.println("ssr:" + ssr[number]);
@@ -60,6 +60,10 @@ public class PokeGatya {
             System.out.println("n:" + n[number]);
             System.out.println("クソが！");
         }
+    }
+
+    public void sulot(){
+        val = (int) (Math.random() * 100) + 1;
     }
 
 }
