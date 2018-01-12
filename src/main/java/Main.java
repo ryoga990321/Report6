@@ -21,6 +21,8 @@ public class Main {
             gatya.lastGatya();
         }else if(input.equals("伝説")){
             gatya.superGatya();
+        }else{
+            System.out.println("3つの中から選べや！");
         }
         System.out.println("また遊んでくれよな！");
     }
