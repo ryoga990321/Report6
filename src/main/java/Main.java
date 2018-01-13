@@ -12,17 +12,17 @@ public class Main {
         System.out.println("単発と10連と伝説どっちにする？");
         input=in.nextLine();
         PokeGatya gatya=new PokeGatya();
-        if (input.equals("単発")){
-            gatya.pokeGatya();
-        }else if(input.equals("10連")) {
+        if (input.equals("単発")) {
+            gatya.rareGatya();
+        } else if (input.equals("10連")) {
             for (int i = 0; i < 9; i++) {
-                gatya.pokeGatya();
+                gatya.rareGatya();
             }
             gatya.lastGatya();
-        }else if(input.equals("伝説")){
+        } else if (input.equals("伝説")) {
             gatya.superGatya();
         }else{
-            System.out.println("3つの中から選べや！");
+            System.out.println("3つの中から選びんさい！");
         }
         System.out.println("また遊んでくれよな！");
     }
