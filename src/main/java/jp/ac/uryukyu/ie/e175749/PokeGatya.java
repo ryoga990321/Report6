@@ -12,7 +12,7 @@ public class PokeGatya {
     String name4="n";
     String monster;
 
-    public void pokeGatya() {
+    public void rareGatya() {
         sulot();
         if (val >= 1 && val <= 5) {
             poket(ssr);
@@ -32,11 +32,9 @@ public class PokeGatya {
     public void lastGatya() {
         sulot();
         if (val >= 1 && val <= 25) {
-            number = (int) (Math.random() * 21);
             poket(ssr);
             celect(name1);
         } else if (val >= 26 && val <= 100) {
-            number = (int) (Math.random() * 45);
             poket(sr);
             celect(name2);
         }
@@ -45,19 +43,15 @@ public class PokeGatya {
     public void superGatya() {
         sulot();
         if (val >= 1 && val <= 10) {
-            number = (int) (Math.random() * 21);
             poket(ssr);
             celect(name1);
         } else if (val >= 11 && val <= 30) {
-            number = (int) (Math.random() * 45);
             poket(sr);
             celect(name2);
         } else if (val >= 31 && val <= 65) {
-            number = (int) (Math.random() * 43);
             poket(r);
             celect(name3);
         } else if (val >= 65 && val <= 100) {
-            number = (int) (Math.random() * 42);
             poket(n);
             celect(name4);
         }
@@ -91,6 +85,11 @@ public class PokeGatya {
 
     public void sulot(){
         val = (int) (Math.random() * 100) + 1;
+    }
+
+    public void choice(int number,String[] rare){
+        this.number=number;
+        monster=rare[number];
     }
 
 }
