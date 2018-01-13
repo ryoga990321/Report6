@@ -1,30 +1,31 @@
 package jp.ac.uryukyu.ie.e175749;
 
 public class PokeGatya {
-    int number, val;
+    int val,number;
     String[] ssr = {"フリーザー", "ファイアー", "サンダー", "ミュウツー", "ミュウ", "エンテイ", "ライコウ", "スイクン", "ホウオウ", "ルギア", "セレビィ", "レジロック", "レジアイス", "レジスチル", "グラードン", "カイオーガ", "レックウザ", "ラティアス", "ラティアス", "デオキシス", "ジラーチ",};
     String[] sr = {"リザードン", "フシギバナ", "カメックス", "カイリキー", "フーディン", "ゴローニャ", "ニドクイン", "ニドキング", "ニョロボン", "ゲンガー", "カイリュー", "ピジョット", "バタフリー", "スピアー", "ラフレシア", "ウツボット", "ワタッコ", "プクリン", "デンリュウ", "メガニウム", "バクフーン", "バシャーモ", "アゲハント", "ドクケイル", "ライチュウ", "ダーテング", "ケッキング", "ジュカイン", "ハスブレロ", "マリルリ", "オーダイル", "ラグラージ", "トドゼルガ", "キングドラ", "クロバット", "バクオング", "ピクシー", "ボスゴドラ", "バンギラス", "サーナイト", "フライゴン", "ボーマンダ", "メタグロス", "ニョロトノ", "キレイハナ"};
     String[] r = {"リザード", "フシギソウ", "カメール", "ゴーリキー", "ユンゲラー", "ゴローン", "ニドリーナ", "ニドリーノ", "ニョロゾ", "ゴースト", "ハクリュー", "ピジョン", "トランセル", "コクーン", "クサイハナ", "ウツドン", "ポポッコ", "プリン", "モココ", "ベイリーフ", "マグマラシ", "ワカシャモ", "カラサリス", "マユルド", "ピカチュウ", "コノハナ", "ヤルキモノ", "ジュプトル", "ハスブレロ", "マリル", "アリゲイツ", "ヌマクロー", "トドグラー", "シードラ", "ゴルバット", "ドゴーム", "ピッピ", "コドラ", "サナギラス", "キルリア", "ビブラーバ", "コモルー", "メタング"};
     String[] n = {"ヒトカゲ", "フシギダネ", "ゼニガメ", "ワンリキー", "ケーシィ", "イシツブテ", "ニドラン♀", "ニドラン♂", "ニョロモ", "ゴース", "ミニリュウ", "ポッポ", "キャタピー", "ビードル", "ナゾノクサ", "マダツボミ", "ハネッコ", "ププリン", "メリープ", "チコリータ", "ヒノアラシ", "アチャモ", "ケムッソ", "ピチュー", "タネボー", "ナマケロ", "キモリ", "ハスボー", "ルリリ", "ワニノコ", "ミズゴロウ", "タマザラシ", "タッツー", "ズバット", "ゴニョニョ", "ピィ", "ココドラ", "ヨーギラス", "ラルトス", "ナックラー", "タツベイ", "ダンバル"};
+    String name1="ssr";
+    String name2="sr";
+    String name3="r";
+    String name4="n";
+    String monster;
 
     public void pokeGatya() {
         sulot();
         if (val >= 1 && val <= 5) {
-            number = (int) (Math.random() * 21);
-            System.out.println("ssr:" + ssr[number]);
-            System.out.println("いやっほーい！伝説だべ！！");
+            poket(ssr);
+            celect(name1);
         } else if (val >= 6 && val <= 20) {
-            number = (int) (Math.random() * 45);
-            System.out.println("sr:" + sr[number]);
-            System.out.println("まあ、あたりっちゃあたりだべ");
+            poket(sr);
+            celect(name2);
         } else if (val >= 21 && val <= 60) {
-            number = (int) (Math.random() * 43);
-            System.out.println("r:" + r[number]);
-            System.out.println("ハズレだっぺな");
+            poket(r);
+            celect(name3);
         } else if (val >= 61 && val <= 100) {
-            number = (int) (Math.random() * 42);
-            System.out.println("n:" + n[number]);
-            System.out.println("クソが！");
+            poket(n);
+            celect(name4);
         }
     }
 
@@ -32,12 +33,12 @@ public class PokeGatya {
         sulot();
         if (val >= 1 && val <= 25) {
             number = (int) (Math.random() * 21);
-            System.out.println("ssr:" + ssr[number]);
-            System.out.println("いやっほーい！伝説だべ！！");
+            poket(ssr);
+            celect(name1);
         } else if (val >= 26 && val <= 100) {
             number = (int) (Math.random() * 45);
-            System.out.println("sr:" + sr[number]);
-            System.out.println("まあ、あたりっちゃあたりだべ");
+            poket(sr);
+            celect(name2);
         }
     }
 
@@ -45,21 +46,47 @@ public class PokeGatya {
         sulot();
         if (val >= 1 && val <= 10) {
             number = (int) (Math.random() * 21);
-            System.out.println("ssr:" + ssr[number]);
-            System.out.println("いやっほーい！伝説だべ！！");
+            poket(ssr);
+            celect(name1);
         } else if (val >= 11 && val <= 30) {
             number = (int) (Math.random() * 45);
-            System.out.println("sr:" + sr[number]);
-            System.out.println("まあ、あたりっちゃあたりだべ");
+            poket(sr);
+            celect(name2);
         } else if (val >= 31 && val <= 65) {
             number = (int) (Math.random() * 43);
-            System.out.println("r:" + r[number]);
-            System.out.println("ハズレだっぺな");
+            poket(r);
+            celect(name3);
         } else if (val >= 65 && val <= 100) {
             number = (int) (Math.random() * 42);
-            System.out.println("n:" + n[number]);
+            poket(n);
+            celect(name4);
+        }
+    }
+
+    public void celect(String name){
+        System.out.println(name+":"+monster);
+        if (name==name1){
+            System.out.println("いやっほーい！伝説だべ！！");
+        }else if(name==name2){
+            System.out.println("まあ、あたりっちゃあたりだべ");
+        }else if(name==name3){
+            System.out.println("ハズレだっぺな");
+        }else if(name==name4){
             System.out.println("クソが！");
         }
+    }
+
+    public void poket(String[] rare){
+        if(rare==ssr){
+            number=(int) (Math.random() * 21);
+        }else if(rare==sr){
+            number=(int) (Math.random() * 45);
+        }else if(rare==r){
+            number=(int) (Math.random() * 43);
+        }else if(rare==n){
+            number=(int) (Math.random() * 42);
+        }
+        monster=rare[number];
     }
 
     public void sulot(){
